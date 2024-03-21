@@ -1,12 +1,45 @@
-# Cam-Stream
-A simple Flask App that streams your webcam
+## Cam-Stream
 
+Cam-Stream is a simple Flask app that enables you to stream your webcam.
+This app was originaly made to stream video from my 3d printer to my ip
 
-This app was originally made to stream a live stream of my 3d printer to my ip and then put on the web using cloudflared
+### Installation
 
-If you want to host it on cloudflared or just want to acces your stream on https connection then here are the stpes
+1. **Clone the Repository**: 
+   ```
+   git clone https://github.com/The-UnknownHacker/Cam-Stream/
+   ```
+   Alternatively, you can download the ZIP file.
 
-1 - Clone This repo by git clone https://github.com/The-UnknownHacker/Cam-Stream/ or downloading a zip
-2 - Open the main.py file and run it
-3 - Install cloudflared on your machine - https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
-4 - Run the cloudflared tunnel by using this command  - cloudflared tunnel --url http://localhost:5000
+2. **Navigate to the Directory**: 
+   ```
+   cd Cam-Stream
+   ```
+
+3. **Run the Application**: 
+   Open the `main.py` file and execute it.
+
+### Usage
+
+4. **Install Cloudflare Tunnel**: 
+   Download and install Cloudflare Tunnel.
+
+5. **Run the Tunnel**: 
+   Execute the following command to run the Cloudflare Tunnel:
+   ```
+   cloudflared tunnel --url http://localhost:5000
+   ```
+
+### Accessing Your Stream
+
+Once the Cloudflare Tunnel is running, you can access your webcam stream via the Cloudflare tunnel URL.
+
+### Notes
+
+- Ensure your webcam is properly connected and configured.
+- Make sure to grant necessary permissions for accessing the webcam.
+- For security reasons, avoid sharing your stream URL publicly unless necessary.
+
+Feel free to customize the app or contribute to its development! If you encounter any issues or have suggestions, please open an issue or submit a pull request.
+
+Enjoy streaming your webcam with Cam-Stream!
